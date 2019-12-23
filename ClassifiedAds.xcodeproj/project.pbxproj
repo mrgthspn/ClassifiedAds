@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF82D9E423AFB9300012E902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82D9E323AFB9300012E902 /* AppDelegate.swift */; };
+		CF82D9E623AFB9300012E902 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82D9E523AFB9300012E902 /* SceneDelegate.swift */; };
+		CF82D9EB23AFB9300012E902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF82D9E923AFB9300012E902 /* Main.storyboard */; };
+		CF82D9ED23AFB9310012E902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF82D9EC23AFB9310012E902 /* Assets.xcassets */; };
+		CF82D9F023AFB9310012E902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF82D9EE23AFB9310012E902 /* LaunchScreen.storyboard */; };
+		CF82DA0623AFB9310012E902 /* ClassifiedAdsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA0523AFB9310012E902 /* ClassifiedAdsUITests.swift */; };
+		CF82DA1B23B01AC70012E902 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA1A23B01AC70012E902 /* APIService.swift */; };
+		CF82DA1D23B01AF10012E902 /* AdsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA1C23B01AF10012E902 /* AdsViewModel.swift */; };
+		CF82DA1F23B01B190012E902 /* AdCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA1E23B01B190012E902 /* AdCellViewModel.swift */; };
+		CF82DA2223B01B560012E902 /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA2123B01B560012E902 /* AdTableViewCell.swift */; };
+		CF82DA2423B01B9F0012E902 /* AdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA2323B01B9F0012E902 /* AdsViewController.swift */; };
+		CF82DA2723B01BF30012E902 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA2623B01BF30012E902 /* DetailViewController.m */; };
+		CF82DA2923B01C410012E902 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA2823B01C410012E902 /* Error.swift */; };
+		CF82DA2B23B01C590012E902 /* Ads.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA2A23B01C590012E902 /* Ads.swift */; };
+		CF82DA2D23B01C780012E902 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA2C23B01C780012E902 /* Bindable.swift */; };
+		CF82DA2F23B01C800012E902 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA2E23B01C800012E902 /* Result.swift */; };
+		CF82DA3323B01C9D0012E902 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA3223B01C9D0012E902 /* Alert.swift */; };
+		CF82DA3523B01D0A0012E902 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA3423B01D0A0012E902 /* UIViewControllerExtensions.swift */; };
+		CF82DA3723B01D2C0012E902 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA3623B01D2C0012E902 /* Api.swift */; };
+		CF82DA3D23B038DD0012E902 /* AlertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA3C23B038DD0012E902 /* AlertTest.swift */; };
+		CF82DA3F23B038F00012E902 /* BindableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA3E23B038F00012E902 /* BindableTest.swift */; };
+		CF82DA4723B047750012E902 /* MockAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA4623B047750012E902 /* MockAds.swift */; };
+		CF82DA4923B04B610012E902 /* AdsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA4823B04B610012E902 /* AdsViewModelTests.swift */; };
+		CF82DA4C23B05B3A0012E902 /* CellsInteractionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82DA4B23B05B3A0012E902 /* CellsInteractionTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF82D9F723AFB9310012E902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF82D9D823AFB9300012E902 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF82D9DF23AFB9300012E902;
+			remoteInfo = ClassifiedAds;
+		};
+		CF82DA0223AFB9310012E902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF82D9D823AFB9300012E902 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF82D9DF23AFB9300012E902;
+			remoteInfo = ClassifiedAds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF82D9E023AFB9300012E902 /* ClassifiedAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassifiedAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF82D9E323AFB9300012E902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF82D9E523AFB9300012E902 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF82D9EA23AFB9300012E902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF82D9EC23AFB9310012E902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF82D9EF23AFB9310012E902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF82D9F123AFB9310012E902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF82D9F623AFB9310012E902 /* ClassifiedAdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassifiedAdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF82D9FC23AFB9310012E902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF82DA0123AFB9310012E902 /* ClassifiedAdsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassifiedAdsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF82DA0523AFB9310012E902 /* ClassifiedAdsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdsUITests.swift; sourceTree = "<group>"; };
+		CF82DA0723AFB9310012E902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF82DA1A23B01AC70012E902 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CF82DA1C23B01AF10012E902 /* AdsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsViewModel.swift; sourceTree = "<group>"; };
+		CF82DA1E23B01B190012E902 /* AdCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCellViewModel.swift; sourceTree = "<group>"; };
+		CF82DA2123B01B560012E902 /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
+		CF82DA2323B01B9F0012E902 /* AdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsViewController.swift; sourceTree = "<group>"; };
+		CF82DA2523B01BF20012E902 /* ClassifiedAds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClassifiedAds-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF82DA2623B01BF30012E902 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		CF82DA2823B01C410012E902 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		CF82DA2A23B01C590012E902 /* Ads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ads.swift; sourceTree = "<group>"; };
+		CF82DA2C23B01C780012E902 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		CF82DA2E23B01C800012E902 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		CF82DA3223B01C9D0012E902 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		CF82DA3423B01D0A0012E902 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		CF82DA3623B01D2C0012E902 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		CF82DA3C23B038DD0012E902 /* AlertTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTest.swift; sourceTree = "<group>"; };
+		CF82DA3E23B038F00012E902 /* BindableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTest.swift; sourceTree = "<group>"; };
+		CF82DA4623B047750012E902 /* MockAds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAds.swift; sourceTree = "<group>"; };
+		CF82DA4823B04B610012E902 /* AdsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsViewModelTests.swift; sourceTree = "<group>"; };
+		CF82DA4B23B05B3A0012E902 /* CellsInteractionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsInteractionTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF82D9DD23AFB9300012E902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF82D9F323AFB9310012E902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF82D9FE23AFB9310012E902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF82D9D723AFB9300012E902 = {
+			isa = PBXGroup;
+			children = (
+				CF82D9E223AFB9300012E902 /* ClassifiedAds */,
+				CF82D9F923AFB9310012E902 /* ClassifiedAdsTests */,
+				CF82DA0423AFB9310012E902 /* ClassifiedAdsUITests */,
+				CF82D9E123AFB9300012E902 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF82D9E123AFB9300012E902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF82D9E023AFB9300012E902 /* ClassifiedAds.app */,
+				CF82D9F623AFB9310012E902 /* ClassifiedAdsTests.xctest */,
+				CF82DA0123AFB9310012E902 /* ClassifiedAdsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF82D9E223AFB9300012E902 /* ClassifiedAds */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA1923B019CF0012E902 /* Settings */,
+				CF82DA1823B019C60012E902 /* Extensions */,
+				CF82DA1723B019B90012E902 /* Helpers */,
+				CF82DA1623B019B30012E902 /* Models */,
+				CF82DA1523B019AD0012E902 /* Views */,
+				CF82DA1423B019A50012E902 /* ViewModels */,
+				CF82DA1323B0197A0012E902 /* Services */,
+				CF82D9E323AFB9300012E902 /* AppDelegate.swift */,
+				CF82D9E523AFB9300012E902 /* SceneDelegate.swift */,
+				CF82D9EC23AFB9310012E902 /* Assets.xcassets */,
+				CF82D9F123AFB9310012E902 /* Info.plist */,
+			);
+			path = ClassifiedAds;
+			sourceTree = "<group>";
+		};
+		CF82D9F923AFB9310012E902 /* ClassifiedAdsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA3B23B038CD0012E902 /* Helpers */,
+				CF82DA3A23B038BB0012E902 /* ViewModel */,
+				CF82DA4523B047670012E902 /* Mock */,
+				CF82D9FC23AFB9310012E902 /* Info.plist */,
+			);
+			path = ClassifiedAdsTests;
+			sourceTree = "<group>";
+		};
+		CF82DA0423AFB9310012E902 /* ClassifiedAdsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA4A23B05AE20012E902 /* Cells */,
+				CF82DA0523AFB9310012E902 /* ClassifiedAdsUITests.swift */,
+				CF82DA0723AFB9310012E902 /* Info.plist */,
+			);
+			path = ClassifiedAdsUITests;
+			sourceTree = "<group>";
+		};
+		CF82DA1323B0197A0012E902 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA1A23B01AC70012E902 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF82DA1423B019A50012E902 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA1C23B01AF10012E902 /* AdsViewModel.swift */,
+				CF82DA1E23B01B190012E902 /* AdCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CF82DA1523B019AD0012E902 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA2023B01B320012E902 /* Cells */,
+				CF82DA2323B01B9F0012E902 /* AdsViewController.swift */,
+				CF82DA2623B01BF30012E902 /* DetailViewController.m */,
+				CF82DA2523B01BF20012E902 /* ClassifiedAds-Bridging-Header.h */,
+				CF82D9E923AFB9300012E902 /* Main.storyboard */,
+				CF82D9EE23AFB9310012E902 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF82DA1623B019B30012E902 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA2823B01C410012E902 /* Error.swift */,
+				CF82DA2A23B01C590012E902 /* Ads.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF82DA1723B019B90012E902 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA2C23B01C780012E902 /* Bindable.swift */,
+				CF82DA2E23B01C800012E902 /* Result.swift */,
+				CF82DA3223B01C9D0012E902 /* Alert.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CF82DA1823B019C60012E902 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA3423B01D0A0012E902 /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF82DA1923B019CF0012E902 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA3623B01D2C0012E902 /* Api.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CF82DA2023B01B320012E902 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA2123B01B560012E902 /* AdTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CF82DA3A23B038BB0012E902 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA4823B04B610012E902 /* AdsViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF82DA3B23B038CD0012E902 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA3C23B038DD0012E902 /* AlertTest.swift */,
+				CF82DA3E23B038F00012E902 /* BindableTest.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CF82DA4523B047670012E902 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA4623B047750012E902 /* MockAds.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		CF82DA4A23B05AE20012E902 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF82DA4B23B05B3A0012E902 /* CellsInteractionTest.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF82D9DF23AFB9300012E902 /* ClassifiedAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF82DA0A23AFB9310012E902 /* Build configuration list for PBXNativeTarget "ClassifiedAds" */;
+			buildPhases = (
+				CF82D9DC23AFB9300012E902 /* Sources */,
+				CF82D9DD23AFB9300012E902 /* Frameworks */,
+				CF82D9DE23AFB9300012E902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClassifiedAds;
+			productName = ClassifiedAds;
+			productReference = CF82D9E023AFB9300012E902 /* ClassifiedAds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF82D9F523AFB9310012E902 /* ClassifiedAdsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF82DA0D23AFB9310012E902 /* Build configuration list for PBXNativeTarget "ClassifiedAdsTests" */;
+			buildPhases = (
+				CF82D9F223AFB9310012E902 /* Sources */,
+				CF82D9F323AFB9310012E902 /* Frameworks */,
+				CF82D9F423AFB9310012E902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF82D9F823AFB9310012E902 /* PBXTargetDependency */,
+			);
+			name = ClassifiedAdsTests;
+			productName = ClassifiedAdsTests;
+			productReference = CF82D9F623AFB9310012E902 /* ClassifiedAdsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF82DA0023AFB9310012E902 /* ClassifiedAdsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF82DA1023AFB9310012E902 /* Build configuration list for PBXNativeTarget "ClassifiedAdsUITests" */;
+			buildPhases = (
+				CF82D9FD23AFB9310012E902 /* Sources */,
+				CF82D9FE23AFB9310012E902 /* Frameworks */,
+				CF82D9FF23AFB9310012E902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF82DA0323AFB9310012E902 /* PBXTargetDependency */,
+			);
+			name = ClassifiedAdsUITests;
+			productName = ClassifiedAdsUITests;
+			productReference = CF82DA0123AFB9310012E902 /* ClassifiedAdsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF82D9D823AFB9300012E902 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Maria Agatha España";
+				TargetAttributes = {
+					CF82D9DF23AFB9300012E902 = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					CF82D9F523AFB9310012E902 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CF82D9DF23AFB9300012E902;
+					};
+					CF82DA0023AFB9310012E902 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CF82D9DF23AFB9300012E902;
+					};
+				};
+			};
+			buildConfigurationList = CF82D9DB23AFB9300012E902 /* Build configuration list for PBXProject "ClassifiedAds" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF82D9D723AFB9300012E902;
+			productRefGroup = CF82D9E123AFB9300012E902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF82D9DF23AFB9300012E902 /* ClassifiedAds */,
+				CF82D9F523AFB9310012E902 /* ClassifiedAdsTests */,
+				CF82DA0023AFB9310012E902 /* ClassifiedAdsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF82D9DE23AFB9300012E902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF82D9F023AFB9310012E902 /* LaunchScreen.storyboard in Resources */,
+				CF82D9ED23AFB9310012E902 /* Assets.xcassets in Resources */,
+				CF82D9EB23AFB9300012E902 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF82D9F423AFB9310012E902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF82D9FF23AFB9310012E902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF82D9DC23AFB9300012E902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF82DA2223B01B560012E902 /* AdTableViewCell.swift in Sources */,
+				CF82DA1F23B01B190012E902 /* AdCellViewModel.swift in Sources */,
+				CF82DA2423B01B9F0012E902 /* AdsViewController.swift in Sources */,
+				CF82DA3723B01D2C0012E902 /* Api.swift in Sources */,
+				CF82DA2723B01BF30012E902 /* DetailViewController.m in Sources */,
+				CF82DA2D23B01C780012E902 /* Bindable.swift in Sources */,
+				CF82DA3323B01C9D0012E902 /* Alert.swift in Sources */,
+				CF82DA3523B01D0A0012E902 /* UIViewControllerExtensions.swift in Sources */,
+				CF82D9E423AFB9300012E902 /* AppDelegate.swift in Sources */,
+				CF82DA2F23B01C800012E902 /* Result.swift in Sources */,
+				CF82DA1D23B01AF10012E902 /* AdsViewModel.swift in Sources */,
+				CF82DA1B23B01AC70012E902 /* APIService.swift in Sources */,
+				CF82DA2923B01C410012E902 /* Error.swift in Sources */,
+				CF82DA2B23B01C590012E902 /* Ads.swift in Sources */,
+				CF82D9E623AFB9300012E902 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF82D9F223AFB9310012E902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF82DA3D23B038DD0012E902 /* AlertTest.swift in Sources */,
+				CF82DA4723B047750012E902 /* MockAds.swift in Sources */,
+				CF82DA4923B04B610012E902 /* AdsViewModelTests.swift in Sources */,
+				CF82DA3F23B038F00012E902 /* BindableTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF82D9FD23AFB9310012E902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF82DA4C23B05B3A0012E902 /* CellsInteractionTest.swift in Sources */,
+				CF82DA0623AFB9310012E902 /* ClassifiedAdsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF82D9F823AFB9310012E902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF82D9DF23AFB9300012E902 /* ClassifiedAds */;
+			targetProxy = CF82D9F723AFB9310012E902 /* PBXContainerItemProxy */;
+		};
+		CF82DA0323AFB9310012E902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF82D9DF23AFB9300012E902 /* ClassifiedAds */;
+			targetProxy = CF82DA0223AFB9310012E902 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF82D9E923AFB9300012E902 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF82D9EA23AFB9300012E902 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF82D9EE23AFB9310012E902 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF82D9EF23AFB9310012E902 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF82DA0823AFB9310012E902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF82DA0923AFB9310012E902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF82DA0B23AFB9310012E902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 597V6V687N;
+				INFOPLIST_FILE = ClassifiedAds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgthspn.ClassifiedAds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassifiedAds/Views/ClassifiedAds-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF82DA0C23AFB9310012E902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 597V6V687N;
+				INFOPLIST_FILE = ClassifiedAds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgthspn.ClassifiedAds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassifiedAds/Views/ClassifiedAds-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF82DA0E23AFB9310012E902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 597V6V687N;
+				INFOPLIST_FILE = ClassifiedAdsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgthspn.ClassifiedAdsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassifiedAds.app/ClassifiedAds";
+			};
+			name = Debug;
+		};
+		CF82DA0F23AFB9310012E902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 597V6V687N;
+				INFOPLIST_FILE = ClassifiedAdsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgthspn.ClassifiedAdsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassifiedAds.app/ClassifiedAds";
+			};
+			name = Release;
+		};
+		CF82DA1123AFB9310012E902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 597V6V687N;
+				INFOPLIST_FILE = ClassifiedAdsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgthspn.ClassifiedAdsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClassifiedAds;
+			};
+			name = Debug;
+		};
+		CF82DA1223AFB9310012E902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 597V6V687N;
+				INFOPLIST_FILE = ClassifiedAdsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgthspn.ClassifiedAdsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClassifiedAds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF82D9DB23AFB9300012E902 /* Build configuration list for PBXProject "ClassifiedAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF82DA0823AFB9310012E902 /* Debug */,
+				CF82DA0923AFB9310012E902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF82DA0A23AFB9310012E902 /* Build configuration list for PBXNativeTarget "ClassifiedAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF82DA0B23AFB9310012E902 /* Debug */,
+				CF82DA0C23AFB9310012E902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF82DA0D23AFB9310012E902 /* Build configuration list for PBXNativeTarget "ClassifiedAdsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF82DA0E23AFB9310012E902 /* Debug */,
+				CF82DA0F23AFB9310012E902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF82DA1023AFB9310012E902 /* Build configuration list for PBXNativeTarget "ClassifiedAdsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF82DA1123AFB9310012E902 /* Debug */,
+				CF82DA1223AFB9310012E902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF82D9D823AFB9300012E902 /* Project object */;
+}
